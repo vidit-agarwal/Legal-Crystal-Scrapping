@@ -1,12 +1,12 @@
 from selenium import webdriver
 #import csv
 import pymysql
-conn = pymysql.connect(host ='tblproduction.cmx4mndnhogx.ap-south-1.rds.amazonaws.com' ,
+conn = pymysql.connect(host ='' ,
                        unix_socket='/tmp/mysql.sock',
-                       user='root',
-                       passwd='Aniket2606' ,
+                       user='',
+                       passwd='' ,
                        use_unicode=True ,
-                       db='mysql'  )
+                       db=''  )
 cur  = conn.cursor()
 cur.execute("USE machineLearning")
 cur.execute("SET NAMES utf8mb4 ;")
